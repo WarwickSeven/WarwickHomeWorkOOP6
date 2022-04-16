@@ -1,14 +1,24 @@
-//
-//  main.cpp
-//  WarwickHomeWorkOOP6
-//
-//  Created by Александр Тихонов on 16.04.2022.
-//
-
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+void foolСheck() { //Lesson F Task 1
+    int i;
+    std::cout << "Integer, pls: ";
+    while (!(std::cin >> i) || (std::cin.peek() != '\n')) {
+        std::cin.clear();
+        while (std::cin.get() != '\n');
+        std::cout << "Nope, try again: ";
+    }
+    std::cout << "Finnaly! i=" << i << std::endl;
+}
+
+std::ostream& endll(std::ostream& output) { //Lesson F Task 2
+    return output << '\n' << '\n' << std::flush;
+}
+
+int main() {
+    foolСheck();
+    std::cout << "text" << endll;
+    std::cout << "text2" << std::endl;
     return 0;
 }
+
