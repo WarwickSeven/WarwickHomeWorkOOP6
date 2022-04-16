@@ -1,6 +1,6 @@
 #include <iostream>
 
-void foolcheck() { //Lesson F Task 1
+void foolСheck() { //Lesson F Task 1
     int i;
     std::cout << "Integer, pls: ";
     while (!(std::cin >> i) || (std::cin.peek() != '\n')) {
@@ -16,7 +16,7 @@ std::ostream& endll(std::ostream& output) { //Lesson F Task 2
 }
 
 int main() {
-    //foolcheck();
+    foolСheck();
     std::cout << "text" << endll;
     std::cout << "text2" << std::endl;
     return 0;
